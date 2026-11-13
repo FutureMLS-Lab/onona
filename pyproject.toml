@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onona"
+version = "0.1.0"
+description = "onóna: Twin Embeddings with Tied Unembeddings"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+dependencies = ["torch>=2.8", "numpy", "pyyaml", "tiktoken"]
+
+[project.optional-dependencies]
+data = ["datasets", "pyarrow", "huggingface_hub"]
+eval = ["datasets"]
+dev = ["pytest"]
+wandb = ["wandb"]
+
+[project.urls]
+Repository = "https://github.com/FutureMLS-Lab/onona"
+Paper = "https://arxiv.org/abs/2611.10556"
+
+[tool.setuptools.packages.find]
+include = ["hcfactory*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,11 @@
+{
+  "source": "Archived onona 40-TPP experiments; model shared by later 1B MoE snapshot",
+  "model_sha256": "66a85bd533c47aa42029986afa6018a96e0263e415c9c2c2ed6d9197bed2d65b",
+  "base_repository": "wdlctc/onona",
+  "base_commit": "d1c56dee9b8f03646433b84da3ebb19c7f60061f",
+  "release_changes": [
+    "Independent evaluation batch size and explicit device override",
+    "Portable evaluator imports, CPU option and historical config compatibility",
+    "Paper-scale configs, documentation, packaging and tests"
+  ]
+}

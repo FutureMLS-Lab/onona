@@ -1,0 +1,6 @@
+include CITATION.cff
+recursive-include configs *.yaml
+recursive-include docs *.md *.json
+recursive-include scripts *.py
+recursive-include data_prep *.py
+recursive-include eval *.py
