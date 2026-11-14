@@ -6,6 +6,8 @@
 
 Research code for [**onóna: Twin Embeddings with Tied Unembeddings**](https://arxiv.org/abs/2611.10556).
 
+[Paper](https://arxiv.org/abs/2611.10556) · [Project page](https://futuremls.org/projects/onona.html) · [Code](https://github.com/FutureMLS-Lab/onona)
+
 Cheng Luo · Xinnan Dai · Zhongzhu Zhou · Zefan Cai · Ruijie Zhu · Tianyu Zhang · Junjie Hu
 
 onóna uses two vocabulary tables, **A** and **B**, for both input embeddings and output prediction. The input uses their average. The output mixes their two softmax distributions using a gate that depends only on the current input token.
